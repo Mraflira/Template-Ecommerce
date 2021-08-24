@@ -110,7 +110,7 @@
     cursor: pointer;
 }
 
-@media only screen and (max-width: 480px){
+@media screen and (max-width: 576px){
     .top-header {
         padding: 5px 15px;
         display: flex;
@@ -142,25 +142,24 @@
     .header {
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        text-align: center;
-        padding: 7px 30px;
+        padding: 0 0;
         background-color: #fff;
     }
-    
-    .logo {
+    .logo{
         width: 100%;
-        text-align: start;
-        padding: 10px 35px;
+        overflow: hidden;
+        position: relative;
+        margin-right: 15px;
     }
-    
-    .search {
+    .logo img{
         width: 100%;
+        object-fit: cover;
     }
     
     .search-box {
-        display: flex;
+        display: none;
         padding: 7px 20px;
         border-radius: 50px;
         justify-content: space-between;
@@ -186,22 +185,23 @@
         cursor: pointer;
         color: rgba(83, 83, 83, 0.295);
     }
-    
-    .cart {
-        text-align: end;
-        width: 100%;
-        padding: 10px 35px;
+    .cart{
+        position:relative;
     }
     
     .cart i {
-        font-size: 25px;
+        font-size: 19px;
         color: var(--hijau);
         cursor: pointer;
+        margin-top: 5px;
     }
 }
 /*------------------------END TOP MENU------------------------*/
 
 /*------------------------START MENU------------------------*/
+.menu-mobile{
+    display: none;
+}
 .section-menu {
     width: 100%;
     height: max-content;
@@ -320,6 +320,36 @@
     text-decoration: none;
 }
 
+@media screen and (max-width: 576px){
+    .menu nav ul{
+        display: none;
+    }
+    .menu-mobile{
+        position: fixed;
+        bottom: 0;
+        z-index: 8;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: max-content;
+        padding: 10px 7px;
+        background-color: var(--hijau);
+        box-shadow: 0 0 1px black;
+    }
+    .menu-mobile a{
+        text-decoration: none;
+        font-size: 12px;
+        color: var(--cream);
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    }
+    .menu-mobile a:hover{
+        color: var(--cream);
+    }
+}
+
 /*------------------------END MENU------------------------*/
 
 /*------------------------MENU2------------------------*/
@@ -330,20 +360,20 @@
     transform:translate(-120%,-5px);
     background-color:var(--hijau);
     z-index:3;
-    height:max-content;
+    height:86vh;
     transition:transform 0.5s;
     position: absolute;
     width: 60%; 
 }
 .header-nav2{
-    background-color: aquamarine;
+    background-color: rgb(4, 91, 111);
     display: flex;
     flex-direction: none;
     height: max-content;
     gap: 10px;
     padding: 2px 8px;
     padding-top: 13px;
-    color: var(--hijau);
+    color: var(--cream);
     padding-left: 15px;
 }
 .header-nav2 i{
@@ -439,11 +469,17 @@
 .nav2 ul .sub-menu-show3.show{
     display: block;
 }
+@media screen and (max-width: 576px){
+    .nav2{
+        z-index: 9;
+        width: 165%;
+    }
+}
 /*------------------------END MENU2------------------------*/
 
 /*------------------------SLIDESHOW-----------------------*/
 .swiper-container {
-    width: 100%;
+    max-width: 100%;
     height: max-content;
 }
 
@@ -543,7 +579,35 @@
     bottom: 0;
     transform:translateY(15%);
 }
-
+@media screen and (max-width: 576px){
+    .slideshow-content-1{
+        margin-left: 0;
+    }
+    .slideshow1{
+        padding: 10px 10px;
+        display: block;
+        height: 60vh;
+    }
+    .slideshow-content-1{
+        text-align: center;
+    }
+    .slideshow-content-1 h1{
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .slideshow-content-1 p{
+        font-size: 15px;
+    }
+    .slideshow-content-2{
+        display: none;
+    }
+    .slideshow-content-1 .slideshow-button{
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+    }
+}
 /*------------------------END SLIDESHOW-----------------------*/
 
 /*------------------------PRODUCT GRID---------------------------*/

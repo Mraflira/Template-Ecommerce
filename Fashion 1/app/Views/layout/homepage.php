@@ -79,6 +79,13 @@
     </div>
 </div>
 
+<div class="menu-mobile">
+    <div><a href="#">Home</a></div>
+    <div><a href="#">Shop by Category</a></div>
+    <div><a href="#">Promo</a></div>
+    <div><a href="#">About Us</a></div>
+    <div><a href="#">Contact</a></div>
+</div>
 <body>
     <?= $this->renderSection('content') ?>
     <script src="js/swiper-bundle.min.js">
