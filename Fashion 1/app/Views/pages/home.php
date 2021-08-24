@@ -200,14 +200,12 @@
 
     <div class="gallery-section">
         <div class="gallery">
+            <div class="heading-gallery">
+            <P>lorem ipsum dolor</P>
+                <h1>Best Seller Product</h1>
+                <div></div>
+            </div>
             <ul>
-                <li>
-                    <img src="images/clothes.jpg" alt="" class="image">
-                    <div class="gallery-text">
-                        <h1>Best Seller Product</h1>
-                        <P>lorem ipsum dolor</P>
-                    </div>
-                </li>
                 <li>
                     <img src="images/gaun.jpg" alt="">
                         <a href="images/gaun.jpg" data-lightbox="mygallery"><i class="fas fa-search"></i></a>
@@ -242,7 +240,11 @@
             </ul>
         </div>
     </div>
-
+<div class="testimonials-section">
+<div class="heading-testimoni">
+            <h1>Testimonials</h1>
+            <div></div>
+        </div>
     <div class="testimoni">
         <div class="gambar-testimonials">
             <div class="background-image"></div>
@@ -286,7 +288,7 @@
                                     facilis
                                     voluptatibus?</p>
                                 <div class="akun-testimonials">
-                                    <img src="..." alt="">
+                                    <img src="images/baju.jpg" alt="">
                                     <div class="text-akun-testimonials">
                                         <h1>Testimoni 1</h1>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
@@ -304,7 +306,7 @@
                                     facilis
                                     voluptatibus?</p>
                                 <div class="akun-testimonials">
-                                    <img src="..." alt="">
+                                    <img src="images/baju.jpg" alt="">
                                     <div class="text-akun-testimonials">
                                         <h1>Testimoni 1</h1>
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
@@ -318,4 +320,5 @@
             </div>
         </div>
     </div>
+</div>
 <?= $this->endSection() ?>
