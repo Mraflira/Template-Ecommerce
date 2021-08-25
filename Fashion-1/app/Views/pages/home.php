@@ -240,85 +240,77 @@
             </ul>
         </div>
     </div>
-<div class="testimonials-section">
-<div class="heading-testimoni">
+
+    <div class="heading-testimonials">
             <h1>Testimonials</h1>
             <div></div>
-        </div>
-    <div class="testimoni">
-        <div class="gambar-testimonials">
-            <div class="background-image"></div>
-            <img src="images/testimonials.png" alt="">
-        </div>
-        <div class="slide-testimonials">
-            <div class="controls-testimonials">
-                <span id="controltestimonials1" class="active">
-                    < </span>
-                        <span id="controltestimonials2" class="active">></span>
+    </div>
+    <div class="section-testimonials">
+        <div class="testimonials-gambar">
+            <div class="img-testimonials">
+            <div class="background-testimonials"></div>
+                <img src="images/testimonials.png" alt="">
             </div>
-            <div class="container slider-testimonials">
-                <div class="veiw-box-testimonials">
-                    <div id="testimonials">
-                        <div class="user-testimonials space">
-                            <div class="text-slideshow2-testimonials">
-                                <i class="fas fa-quote-right"></i>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat molestias
-                                    tenetur
-                                    assumenda, voluptatem impedit fugiat atque expedita, suscipit ipsa provident
-                                    voluptatibus consectetur eligendi voluptatum id? Minima veniam corrupti
-                                    facilis
-                                    voluptatibus?</p>
-                                <div class="akun-testimonials">
-                                    <img src="images/baju.jpg" alt="">
-                                    <div class="text-akun-testimonials">
-                                        <h1>Testimoni 1</h1>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                                    </div>
-                                </div>
-                            </div>
+        </div>
+        <div class="testimonials-slider">
+        <div class="swiper-container testimonialsSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="box-testimonials">
+                <i class="fas fa-quote-right"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, iusto vel quae molestiae recusandae illo perferendis consequatur laudantium voluptatibus ipsum id adipisci cupiditate cum modi, reprehenderit corrupti tempora similique officia?</p>
+                <div class="klien-section">
+                        <div class="profil-klien">
+                            <img src="images/testimonials.png" alt="">
                         </div>
-
-                        <div class=" user-testimonials space">
-                            <div class="text-slideshow2-testimonials">
-                                <i class="fas fa-quote-right"></i>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat molestias
-                                    tenetur
-                                    assumenda, voluptatem impedit fugiat atque expedita, suscipit ipsa provident
-                                    voluptatibus consectetur eligendi voluptatum id? Minima veniam corrupti
-                                    facilis
-                                    voluptatibus?</p>
-                                <div class="akun-testimonials">
-                                    <img src="images/baju.jpg" alt="">
-                                    <div class="text-akun-testimonials">
-                                        <h1>Testimoni 1</h1>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="nama-klien">
+                            <h1>Testimoni 1</h1>
+                            <p>Lorem Ipsum Dolor sit amet</p>
                         </div>
-                        <div class=" user-testimonials space">
-                            <div class="text-slideshow2-testimonials">
-                                <i class="fas fa-quote-right"></i>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat molestias
-                                    tenetur
-                                    assumenda, voluptatem impedit fugiat atque expedita, suscipit ipsa provident
-                                    voluptatibus consectetur eligendi voluptatum id? Minima veniam corrupti
-                                    facilis
-                                    voluptatibus?</p>
-                                <div class="akun-testimonials">
-                                    <img src="images/baju.jpg" alt="">
-                                    <div class="text-akun-testimonials">
-                                        <h1>Testimoni 1</h1>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
                 </div>
             </div>
         </div>
+        <div class="swiper-slide"> <div class="box-testimonials">
+                <i class="fas fa-quote-right"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, iusto vel quae molestiae recusandae illo perferendis consequatur laudantium voluptatibus ipsum id adipisci cupiditate cum modi, reprehenderit corrupti tempora similique officia?</p>
+                <div class="klien-section">
+                        <div class="profil-klien">
+                            <img src="images/testimonials.png" alt="">
+                        </div>
+                        <div class="nama-klien">
+                            <h1>Testimoni 1</h1>
+                            <p>Lorem Ipsum Dolor sit amet</p>
+                        </div>
+                </div>
+            </div></div>
+        <div class="swiper-slide"> <div class="box-testimonials">
+                <i class="fas fa-quote-right"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, iusto vel quae molestiae recusandae illo perferendis consequatur laudantium voluptatibus ipsum id adipisci cupiditate cum modi, reprehenderit corrupti tempora similique officia?</p>
+                <div class="klien-section">
+                        <div class="profil-klien">
+                            <img src="images/testimonials.png" alt="">
+                        </div>
+                        <div class="nama-klien">
+                            <h1>Testimoni 1</h1>
+                            <p>Lorem Ipsum Dolor sit amet</p>
+                        </div>
+                </div>
+            </div></div>
+        <div class="swiper-slide"> <div class="box-testimonials">
+                <i class="fas fa-quote-right"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, iusto vel quae molestiae recusandae illo perferendis consequatur laudantium voluptatibus ipsum id adipisci cupiditate cum modi, reprehenderit corrupti tempora similique officia?</p>
+                <div class="klien-section">
+                        <div class="profil-klien">
+                            <img src="images/testimonials.png" alt="">
+                        </div>
+                        <div class="nama-klien">
+                            <h1>Testimoni 1</h1>
+                            <p>Lorem Ipsum Dolor sit amet</p>
+                        </div>
+                </div>
+            </div></div>
+      </div>
     </div>
-</div>
+        </div>
+    </div>
 <?= $this->endSection() ?>

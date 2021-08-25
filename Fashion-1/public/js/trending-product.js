@@ -1,5 +1,6 @@
 var swiperCategori = new Swiper(".swiperCategori", {
     slidesPerView: 4,
+    spaceBetween: 5,
     pagination: {
         el: ".swiper-pagination2",
         clickable: true,
@@ -11,15 +12,15 @@ var swiperCategori = new Swiper(".swiperCategori", {
         },
         "@0.75": {
           slidesPerView: 2,
-          spaceBetween: 20,
+          spaceBetween: 5,
         },
         "@1.00": {
           slidesPerView: 3,
-          spaceBetween: 40,
+          spaceBetween: 5,
         },
         "@1.50": {
           slidesPerView: 4,
-          spaceBetween: 50,
+          spaceBetween: 5,
         },
       },
 });

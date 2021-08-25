@@ -704,6 +704,7 @@
     color: var(--hijau);
     font-weight: 400;
     font-size: 14px;
+    margin-left:3px;
 }
 
 .product-price h1 {
@@ -722,6 +723,33 @@
 }
 .swiper-pagination2 span{
     color: #000;
+}
+@media screen and (max-width: 576px){
+    .product-kategori{
+        padding: 40px 20px;
+        gap: 2px;
+    }
+    .box-product{
+        box-shadow: 0 0 1px black;
+        width: 180px;
+        padding: 20px 0;
+    }
+    .product-image{
+        width: 100%;
+        height: 150px;
+    }
+    .judul-product h1 {
+        font-size: 18px;
+        color: var(--hijau);
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+    .swiper-pagination2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+    }
 }
 /*------------------------END PRODUCT GRID---------------------------*/
 /*------------------------PROMO---------------------------*/
@@ -760,6 +788,44 @@
     background-color: #b9d5b2;
     color: var(--hijau);
     font-weight: 500;
+}
+@media screen and (max-width: 576px){
+    .promo{
+        padding: 0 30px;
+    }
+    .gambar-promo{
+        position: relative;
+        width: 100%;
+        height: 40vh;
+        display: block;
+        margin: auto;
+    }
+    .gambar-promo img{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50px;
+    }
+    .gambar-promo .promo-button{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    .promo-button input{
+        border: 1px solid var(--hijau);
+        padding: 3px 20px;
+        border-radius: 50px;
+        background-color: rgb(142, 183, 192);
+        color: var(--hijau);
+        font-weight: 400;
+        font-size: 12px;
+        cursor: pointer;
+    }
 }
 /*------------------------END PROMO---------------------------*/
 
@@ -828,15 +894,73 @@
     top: 20px;
     left: 0;
 }
+@media screen and (max-width: 576px){
+    .teks-gambar {
+        padding: 18px 30px;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+        align-items: center;
+        background-size: cover;
+        background-blend-mode: overlay;
+        background: no-repeat center/80% url("../images/cwk3.png") #f7d7be;
+    }
+    .teks{
+        width:100%;
+        text-align: center;
+    }
+    .teks-gambar .gambar {
+        width: 180px;
+        height: 150px;
+        position: relative;
+        margin: auto;
+        display: none;
+    }
+    .teks-gambar .gambar img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: -10px;
+        left: 0;
+    }
+    .teks-gambar .teks h1 {
+        font-size: 30px;
+        color: var(--hijau);
+    }
+    .teks-gambar .teks div{
+        margin: auto;
+        margin-bottom: 10px;
+        height: 2px;
+    }
+    .teks-gambar .teks p {
+        font-size: 13px;
+        color: var(--hijau);
+    }
+    .teks-gambar .teks input {
+        border: none;
+        margin-top: 5px;
+        background-color: var(--hijau);
+        padding: 7px 30px;
+        color: #f7d7be;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 11px;
+    }
+}
 /*------------------------END TEKS GAMBAR---------------------------*/
 /*------------------------GALLERY LIGHTBOX---------------------------*/
-.gallery-section {
+.gallery-section{
     width: 100%;
     height: max-content;
     padding: 45px 0;
 }
 
-.gallery {
+.gallery{
     height: max-content;
 }
 .heading-gallery{
@@ -1003,169 +1127,183 @@
 .overlay:target img{
     animation: motionsEffect 1s;
 }
+@media screen and (max-width: 576px){
+    .heading-gallery h1{
+        font-size: 26px;
+        color: var(--hijau);
+    }
+    .gallery ul li {
+        width: 300px;
+        height: 150px;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+    }
+    .gallery2 ul li {
+        width: 500px;
+        height:150px;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+    }
+    .gallery ul li a{
+        transform: translate(-50%,-50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: #fff;
+        padding: 7px 9px;
+        border-radius: 50%;
+        color:var(--hijau);
+        font-size: 8px;
+    }
+    .gallery2 ul li a{
+        color: var(--hijau);
+        transform: translate(-50%,-50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: #fff;
+        padding: 7px 9px;
+        border-radius: 50%;
+        font-size: 8px;
+    }
+    .gallery .zoom i {
+        color: var(--hijau);
+    }
+}
 /*------------------------END GALLERY LIGHTBOX---------------------------*/
 /*------------------------TESTIMONIALS---------------------------*/
-.slide-testimonials {
-    width: 75%;
-    box-sizing: border-box;
-    overflow: hidden;
-    position: relative;
-}
-.testimonials-section{
-    width: 100%;
-}
-
-.testimoni {
+.section-testimonials{
     width: 100%;
     height: max-content;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 30px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 40px 50px;
 }
-.heading-testimoni h1{
-    text-align: center;
-    color: var(--hijau);
+.heading-testimonials h1{
     font-size: 30px;
+    color:var(--hijau);
+    text-align: center;
+    padding-top: 10px;
 }
-.heading-testimoni div{
-    display: block;
-    margin:auto ;
-    width: 50px;
+.heading-testimonials div{
+    width: 40px;
     height: 3px;
     background-color: var(--cream);
+    border-radius: 4px;
+    margin:auto;
 }
-.background-image {
-    background-color: #f7d7be;
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    top: 5%;
-    left: 40%;
-    transform: translate(-40%, -60%);
-}
-
-.gambar-testimonials {
+.testimonials-gambar{
     width: 30%;
-    padding: 0 25px;
+}
+.img-testimonials{
     position: relative;
-    background-color: #f7d7be;
-}
-
-.gambar-testimonials img {
-    width: 280px;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-}
-
-.veiw-box-testimonials {
-    width: 150%;
-    padding: 0 0;
-    margin: 0;
+    width: 270px;
+    height: 370px;
     display: block;
+    margin: auto;
+}
+.img-testimonials .background-testimonials{
+    width: 250px;
+    height: 300px;
+    background-color: var(--cream);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.img-testimonials img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.background-testimonials{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+.testimonials-slider{
+    width: 70%;
+}
+.box-testimonials{
+    display: block;
+    padding: 0 30px;
+}
+.box-testimonials .fas{
+    font-size: 60px;
+    color: #fff;
+}
+.box-testimonials p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.klien-section{
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 8px;
+}
+.profil-klien{
+    background-color: var(--hijau);
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
     overflow: hidden;
-    box-sizing: border-box;
-}
-
-#testimonials {
-    display: flex;
-    transition: 0.5s;
-}
-
-.user-testimonials {
-    width: 400px;
-    text-align: start;
-    padding: 30px 35px;
-    box-sizing: border-box;
     position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #f7d7be;
 }
-
-.text-slideshow2-testimonials i {
-    color: #fff;
-    font-size: 50px;
-    margin-bottom: 20px;
+.profil-klien img{
+    width:100%;
+    object-position: top;
+    position: absolute;
+    object-fit: cover;
 }
-
-.text-slideshow2-testimonials p {
-    color: var(--hijau);
-    font-size: 13px;
+.nama-klien{
+    line-height: 2px;
+    margin-top: 13px;
 }
-
-.text-akun-testimonials {
-    line-height: 10px;
-    margin-top: 25px;
-}
-
-.text-akun-testimonials h1 {
+.nama-klien h1{
     font-size: 15px;
-    line-height: 5px;
+    color: rgb(24, 24, 24);
 }
-
-.text-akun-testimonials p {
-    font-size: 10px;
+.nama-klien p{
+    font-size: 12px;
+    color: rgb(24, 24, 24);
 }
-
-.akun-testimonials {
-    display: flex;
-    gap: 20px;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-}
-
-.akun-testimonials img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.space {
-    margin: 0 7px;
-}
-
-.controls-testimonials {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-right: 25px;
-    margin-bottom: 20px;
-}
-
-.controls-testimonials span {
-    background: var(--hijau);
-    border-radius: 3px;
-    margin: 0 5px;
-    cursor: pointer;
-    transition: 0.5s;
-    font-size: 30px;
-    text-align: center;
-    font-weight: 500;
-    color: #fff;
-}
-
-.active {
-    width: 45px !important;
-}
-@media only screen and (max-width: 768px){
-    .gambar-testimonials img {
+@media screen and (max-width: 576px){
+    .section-testimonials{
+        padding: 20px 24px;
+    }
+    .box-testimonials .fas{
+        font-size: 40px;
+        color: #fff;
+    }
+    .box-testimonials{
+        display: block;
+        padding: 0 15px;
+    }
+    .box-testimonials p{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .testimonials-gambar{
+        width: 30%;
+        display: none;
+    }
+    .testimonials-slider{
         width: 100%;
-        height: 100%;
-        position: absolute;
-        object-fit: cover;
-        top: 0;
-        left: 0;
-        z-index: 9999;
+    }
+    .nama-klien{
+        line-height: 9px;
+    }
+    .nama-klien h1{
+        font-size: 11px;
+        color: rgb(24, 24, 24);
+    }
+    .nama-klien p{
+        font-size: 9px;
+        color: rgb(24, 24, 24);
     }
 }
 /*------------------------END TESTIMONIALS---------------------------*/
